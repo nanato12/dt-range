@@ -14,6 +14,8 @@ from dt_range import dtrange ,weekrange ,daterange ,hourrange ,minuterange ,seco
 
 ## Examples
 
+Here is an example of usage using `START` and `END`.
+
 ```python
 from datetime import datetime
 
@@ -22,6 +24,8 @@ END = datetime(2021, 1, 31)
 ```
 
 ### weekrange
+
+`weekrange` can be used to get the date for each week.
 
 ```python
 for dt in weekrange(START, END):
@@ -40,6 +44,8 @@ for dt in weekrange(START, END, weeks=2):
 ```
 
 ### daterange
+
+`daterange` can be used to get the date for each day.
 
 ```python
 for dt in daterange(START, END):
