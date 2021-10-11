@@ -10,6 +10,7 @@ mypy = "*"
 flake8 = "*"
 black = "*"
 isort = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.9"
