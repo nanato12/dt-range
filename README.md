@@ -40,6 +40,40 @@ for dt in weekrange(START, END, weeks=2):
 # 2021-01-29 00:00:00
 ```
 
+### daterange
+
+```python
+from datetime import datetime
+
+from dt_range import daterange
+
+START = datetime(2021, 1, 1)
+END = datetime(2021, 1, 31)
+
+
+for dt in daterange(START, END):
+    print(dt)
+# 2021-01-01 00:00:00
+# 2021-01-02 00:00:00
+# 2021-01-03 00:00:00
+# ...
+# 2021-01-29 00:00:00
+# 2021-01-30 00:00:00
+# 2021-01-31 00:00:00
+
+
+for dt in daterange(START, END, days=4):
+    print(dt)
+# 2021-01-01 00:00:00
+# 2021-01-05 00:00:00
+# 2021-01-09 00:00:00
+# 2021-01-13 00:00:00
+# 2021-01-17 00:00:00
+# 2021-01-21 00:00:00
+# 2021-01-25 00:00:00
+# 2021-01-29 00:00:00
+```
+
 ## GitHub Actions
 
 - **pychecker**
