@@ -11,6 +11,8 @@ flake8 = "*"
 black = "*"
 isort = "*"
 pytest = "*"
+wheel = "*"
+twine = "*"
 
 [requires]
 python_version = "3.9"
