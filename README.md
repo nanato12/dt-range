@@ -4,9 +4,15 @@ Generators for datetime.
 
 ## Usage
 
+You can use `pip` to install this package.
+
 ```shell
 $ pip install dt-range
 ```
+
+If you use it, import `dt_range`.
+
+Note the slight difference from this package name.
 
 ```python
 from dt_range import dtrange ,weekrange ,daterange ,hourrange ,minuterange ,secondrange ,millisecondrange ,microsecondrange ,timedeltarange
