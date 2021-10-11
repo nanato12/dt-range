@@ -14,3 +14,15 @@ mypy:
 
 test:
 	pytest tests/
+
+build:
+	rm -rf dist/*
+	rm -rf build/*
+	python setup.py sdist
+	python setup.py bdist_wheel
+
+upload-test:
+	twine upload --repository testpypi dist/*
+
+upload:
+	twine upload --repository pypi dist/*
