@@ -35,7 +35,7 @@ __ARGS = {
 }
 
 
-def dtrange(
+def __dtrange(
     start: datetime,
     end: datetime,
     td: Optional[timedelta] = None,
@@ -58,46 +58,46 @@ def dtrange(
 def weekrange(
     start: datetime, end: datetime, weeks: int = 1
 ) -> Generator[datetime, None, None]:
-    return dtrange(start, end, weeks=weeks)
+    return __dtrange(start, end, weeks=weeks)
 
 
 def daterange(
     start: datetime, end: datetime, days: int = 1
 ) -> Generator[datetime, None, None]:
-    return dtrange(start, end, days=days)
+    return __dtrange(start, end, days=days)
 
 
 def hourrange(
     start: datetime, end: datetime, hours: int = 1
 ) -> Generator[datetime, None, None]:
-    return dtrange(start, end, hours=hours)
+    return __dtrange(start, end, hours=hours)
 
 
 def minuterange(
     start: datetime, end: datetime, minutes: int = 1
 ) -> Generator[datetime, None, None]:
-    return dtrange(start, end, minutes=minutes)
+    return __dtrange(start, end, minutes=minutes)
 
 
 def secondrange(
     start: datetime, end: datetime, seconds: int = 1
 ) -> Generator[datetime, None, None]:
-    return dtrange(start, end, seconds=seconds)
+    return __dtrange(start, end, seconds=seconds)
 
 
 def millisecondrange(
     start: datetime, end: datetime, milliseconds: int = 1
 ) -> Generator[datetime, None, None]:
-    return dtrange(start, end, milliseconds=milliseconds)
+    return __dtrange(start, end, milliseconds=milliseconds)
 
 
 def microsecondrange(
     start: datetime, end: datetime, microseconds: int = 1
 ) -> Generator[datetime, None, None]:
-    return dtrange(start, end, microseconds=microseconds)
+    return __dtrange(start, end, microseconds=microseconds)
 
 
 def timedeltarange(
     start: datetime, end: datetime, td: timedelta
 ) -> Generator[datetime, None, None]:
-    return dtrange(start, end, td=td)
+    return __dtrange(start, end, td=td)
