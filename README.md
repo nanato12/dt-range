@@ -114,6 +114,35 @@ for dt in hourrange(START, END, hours=4):
 # 2021-01-01 20:00:00
 ```
 
+### Other
+
+You can also use `minuterange`, `secondrange`, etc. in the same way.
+
+If you want to break it into smaller time segments, use `timedeltarange`.
+
+```python
+from datetime import datetime, timedelta
+
+from dt_range import timedeltarange
+
+START = datetime(2021, 1, 1)
+END = datetime(2021, 1, 31)
+
+
+for dt in timedeltarange(
+    START,
+    END,
+    timedelta(days=5, hours=4, minutes=3, seconds=2, microseconds=1),
+):
+    print(dt)
+# 2021-01-01 00:00:00
+# 2021-01-06 04:03:02.000001
+# 2021-01-11 08:06:04.000002
+# 2021-01-16 12:09:06.000003
+# 2021-01-21 16:12:08.000004
+# 2021-01-26 20:15:10.000005
+```
+
 ## GitHub Actions
 
 - **pychecker**
