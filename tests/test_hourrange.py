@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from dtrange import hourrange
+from dt_range import hourrange
 
 
 class TestHourRange:
