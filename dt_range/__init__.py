@@ -17,7 +17,7 @@ __version__ = "1.0"
 __license__ = "Apache License 2.0"
 __author__ = "nanato12"
 __author_email__ = "admin@nanato12.info"
-__url__ = "https://github.com/nanato12/dtrange"
+__url__ = "https://github.com/nanato12/dt_range"
 
 
 from datetime import datetime, timedelta
