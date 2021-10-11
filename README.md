@@ -15,7 +15,16 @@ If you use it, import `dt_range`.
 Note the slight difference from this package name.
 
 ```python
-from dt_range import weekrange ,daterange ,hourrange ,minuterange ,secondrange ,millisecondrange ,microsecondrange ,timedeltarange
+from dt_range import (
+    daterange,
+    hourrange,
+    microsecondrange,
+    millisecondrange,
+    minuterange,
+    secondrange,
+    timedeltarange,
+    weekrange,
+)
 ```
 
 ## Examples
