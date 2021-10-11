@@ -5,6 +5,8 @@ from dt_generator import daterange
 
 class TestDateRange:
     def test_it(self) -> None:
+        """通常"""
+
         start = datetime(2000, 1, 1)
         end = datetime(2000, 1, 5)
 
@@ -16,6 +18,8 @@ class TestDateRange:
         assert next(generator_object) == end
 
     def test_orver_month(self) -> None:
+        """月をまたぐ"""
+
         start = datetime(2000, 1, 28)
         end = datetime(2000, 2, 3)
 
@@ -29,6 +33,8 @@ class TestDateRange:
         assert next(generator_object) == end
 
     def test_orver_year(self) -> None:
+        """年をまたぐ"""
+
         start = datetime(2000, 12, 28)
         end = datetime(2001, 1, 3)
 
