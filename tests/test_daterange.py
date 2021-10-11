@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from dt_generator import daterange
+from dtrange import daterange
 
 
 class TestDateRange:
