@@ -14,17 +14,16 @@ from dt_range import dtrange ,weekrange ,daterange ,hourrange ,minuterange ,seco
 
 ## Examples
 
-### weekrange
-
 ```python
 from datetime import datetime
 
-from dt_range import weekrange
-
 START = datetime(2021, 1, 1)
 END = datetime(2021, 1, 31)
+```
 
+### weekrange
 
+```python
 for dt in weekrange(START, END):
     print(dt)
 # 2021-01-01 00:00:00
@@ -43,14 +42,6 @@ for dt in weekrange(START, END, weeks=2):
 ### daterange
 
 ```python
-from datetime import datetime
-
-from dt_range import daterange
-
-START = datetime(2021, 1, 1)
-END = datetime(2021, 1, 31)
-
-
 for dt in daterange(START, END):
     print(dt)
 # 2021-01-01 00:00:00
